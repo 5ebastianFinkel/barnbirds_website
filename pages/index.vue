@@ -14,7 +14,8 @@
         <figure>
           <img src="~/static/logo.svg" class="image" alt="Barnbirds Logo">
         </figure>
-        <nuxt-link to="/posts/ira">Gesang</nuxt-link>
+        <h1>Willkommen auf der Website der Barnbirds</h1>
+        <p>Die Seite befindet sich aktuell im Aufbau, also kommt bald wieder für mehr Infos</p>
         </body>
       </main>
     </div>
