@@ -46,7 +46,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-body {
+body, h1 {
   display: block;
   margin: 0;
   width: 100%;

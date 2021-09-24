@@ -20,6 +20,7 @@ export default {
   }),
   methods: {
     toggle () {
+      this.$emit('burgerEvent')
       this.isBurgerActive = !this.isBurgerActive
     }
   }
