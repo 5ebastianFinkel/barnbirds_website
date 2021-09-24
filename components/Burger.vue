@@ -6,30 +6,30 @@
   >
     <slot>
       <button type="button" class="burger-button" title="Menu">
-        <span class="burger-bar burger-bar--1" />
-        <span class="burger-bar burger-bar--2" />
-        <span class="burger-bar burger-bar--3" />
+        <span class="burger-bar burger-bar--1"/>
+        <span class="burger-bar burger-bar--2"/>
+        <span class="burger-bar burger-bar--3"/>
       </button>
     </slot>
   </div>
 </template>
 <script>
+import { mapMutations } from 'vuex'
+
 export default {
-  data: () => ({
-    isBurgerActive: false
-  }),
-  methods: {
-    toggle () {
-      this.$emit('burgerEvent')
-      this.isBurgerActive = !this.isBurgerActive
+  computed: {
+    isBurgerActive () {
+      return this.$store.state.navbar.isNavOpen
     }
+  },
+  methods: {
+    ...mapMutations({
+      toggle: 'navbar/toggleNav'
+    })
   }
 }
 </script>
 <style>
-.hidden {
-  visibility: hidden;
-}
 
 button {
   cursor: pointer;
