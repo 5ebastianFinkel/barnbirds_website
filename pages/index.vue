@@ -1,32 +1,47 @@
 <template>
   <div id="app">
     <div class="theme no-sidebar">
-      <header class="nav-bar">
-        <div class="sidebar-button">
-          <Burger/>
-        </div>
-        <a href="/" class="nav-bar-title">
-          <img src="~/static/logo.svg" alt="Barnbirds Logo" class="logo">
-        </a>
-      </header>
-      <main>
-        <body>
-        <figure>
-          <img src="~/static/logo.svg" class="image" alt="Barnbirds Logo">
-        </figure>
-        <h1>Willkommen auf der Website der Barnbirds</h1>
-        <p>Die Seite befindet sich aktuell im Aufbau, also kommt bald wieder für mehr Infos</p>
-        </body>
-      </main>
+
+      <figure>
+        <img src="~/static/logo.svg" class="image" alt="Barnbirds Logo">
+      </figure>
+      <h1>Willkommen auf der Website der Barnbirds</h1>
+      <p>Die Seite befindet sich aktuell im Aufbau, also kommt bald wieder für mehr Infos</p>
     </div>
   </div>
 </template>
 
 <script>
 
-import Burger from '~/components/Burger'
+import { mapMutations } from 'vuex'
 
 export default {
-  components: { Burger }
+  computed: {
+    isPanelOpen () {
+      return this.$store.state.navbar.isNavOpen
+    }
+  },
+  methods: {
+    ...mapMutations({
+      toggle: 'navbar/toggle'
+    })
+  }
 }
 </script>
+<style>
+
+.nuxt-link-active {
+  display: block;
+  padding: 0 1.5rem;
+  line-height: 36px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--c-text);
+  white-space: nowrap;
+}
+
+.nuxt-link-active:hover {
+  text-decoration: none;
+  color: var(--c-brand);
+}
+</style>

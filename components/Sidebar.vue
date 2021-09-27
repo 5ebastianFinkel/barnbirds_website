@@ -1,6 +1,6 @@
 <template>
   <div class="sidebar">
-    <div v-if="isPanelOpen" class="sidebar-backdrop" @click="closeSidebarPanel" />
+    <div v-if="isPanelOpen" class="sidebar-backdrop" @click="toggle" />
     <transition name="slide">
       <div
         v-if="isPanelOpen"
@@ -12,18 +12,22 @@
   </div>
 </template>
 <script>
+import { mapMutations } from 'vuex'
+
 export default {
-  data: () => ({
-    isPanelOpen: false
-  }),
-  methods: {
-    closeSidebarPanel () {
-      this.isPanelOpen = false
+  computed: {
+    isPanelOpen () {
+      return this.$store.state.navbar.isNavOpen
     }
+  },
+  methods: {
+    ...mapMutations({
+      toggle: 'navbar/toggle'
+    })
   }
 }
 </script>
-<style>
+<style scoped>
 .slide-enter-active,
 .slide-leave-active {
   transition: transform 0.2s ease;
@@ -36,7 +40,7 @@ export default {
 }
 
 .sidebar-backdrop {
-  background-color: rgba(0, 0, 0, 0.5);
+  filter: blur(4px);
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -47,13 +51,13 @@ export default {
 
 .sidebar-panel {
   overflow-y: auto;
-  background-color: #130f40;
+  background-color: var(--c-white-dark);
   position: fixed;
   left: 0;
-  top: 0;
-  height: 100vh;
-  z-index: 999;
+  top: var(--header-height);
+  width: 150px;
+  height: 300px;
+  z-index: 10;
   padding: 3rem 20px 2rem 20px;
-  width: 300px;
 }
 </style>
