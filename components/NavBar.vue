@@ -9,7 +9,15 @@
       </a>
     </div>
     <Sidebar>
-      <nuxt-link to="/Band">Band</nuxt-link>
+      <ul>
+        <li>
+          <nuxt-link to="">Home</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link to="/Band">Band</nuxt-link>
+        </li>
+      </ul>
+
     </Sidebar>
   </div>
 </template>
@@ -20,3 +28,19 @@ export default {
   name: 'NavBar'
 }
 </script>
+<style>
+.nuxt-link-active {
+  display: block;
+  padding: 0 1.5rem;
+  line-height: 36px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--c-text);
+  white-space: nowrap;
+}
+
+.nuxt-link-active:hover {
+  text-decoration: none;
+  color: var(--c-brand);
+}
+</style>
