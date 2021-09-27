@@ -3,7 +3,7 @@ export const state = () => ({
 })
 
 export const mutations = {
-  toggleNav (state) {
+  toggle (state) {
     state.isNavOpen = !state.isNavOpen
   }
 }

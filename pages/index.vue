@@ -1,15 +1,7 @@
 <template>
   <div id="app">
     <div class="theme no-sidebar">
-      <div v-if="isPanelOpen" class="sidebar-backdrop" @click="closeSidebarPanel"/>
-      <transition name="slide">
-        <div
-          v-if="isPanelOpen"
-          class="sidebar-panel"
-        >
-          <nuxt-link to="/" @click.prevent="closeSidebarPanel">Home</nuxt-link>
-        </div>
-      </transition>
+
       <figure>
         <img src="~/static/logo.svg" class="image" alt="Barnbirds Logo">
       </figure>
@@ -31,44 +23,25 @@ export default {
   },
   methods: {
     ...mapMutations({
-      closSidebarPanel: 'navbar/toggleNav'
+      toggle: 'navbar/toggle'
     })
   }
 }
 </script>
 <style>
-.slide-enter-active,
-.slide-leave-active {
-  transition: transform 0.2s ease;
+
+.nuxt-link-active {
+  display: block;
+  padding: 0 1.5rem;
+  line-height: 36px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--c-text);
+  white-space: nowrap;
 }
 
-.slide-enter,
-.slide-leave-to {
-  transform: translateX(-100%);
-  transition: all 150ms ease-in 0s;
-}
-
-.sidebar-backdrop {
-  background-color: #90a4b7;
-  filter: blur(4px);
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  cursor: pointer;
-}
-
-.sidebar-panel {
-  backdrop-filter: blur(10px);
-  overflow-y: auto;
-  background-color: var(--code-bg-color);
-  position: fixed;
-  left: 0;
-  top: var(--header-height);
-  height: 100vh;
-  z-index: 999;
-  padding: 3rem 20px 2rem 20px;
-  width: 300px;
+.nuxt-link-active:hover {
+  text-decoration: none;
+  color: var(--c-brand);
 }
 </style>

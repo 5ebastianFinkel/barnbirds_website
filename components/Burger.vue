@@ -24,7 +24,7 @@ export default {
   },
   methods: {
     ...mapMutations({
-      toggle: 'navbar/toggleNav'
+      toggle: 'navbar/toggle'
     })
   }
 }
