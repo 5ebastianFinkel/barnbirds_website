@@ -1,41 +1,39 @@
 <template>
   <div id="app">
     <div class="theme no-sidebar">
-
-      <main>
-        <body>
-        <div v-if="isPanelOpen" class="sidebar-backdrop" @click="closeSidebarPanel" />
-        <transition name="slide">
-          <div
-            v-if="isPanelOpen"
-            class="sidebar-panel"
-          >
-            <nuxt-link to="/posts/ira" @click.prevent="closeSidebarPanel">Home</nuxt-link>
-          </div>
-        </transition>
-        <figure>
-          <img src="~/static/logo.svg" class="image" alt="Barnbirds Logo">
-        </figure>
-        <h1>Willkommen auf der Website der Barnbirds</h1>
-        <p>Die Seite befindet sich aktuell im Aufbau, also kommt bald wieder für mehr Infos</p>
-        </body>
-      </main>
+      <div v-if="isPanelOpen" class="sidebar-backdrop" @click="closeSidebarPanel"/>
+      <transition name="slide">
+        <div
+          v-if="isPanelOpen"
+          class="sidebar-panel"
+        >
+          <nuxt-link to="/" @click.prevent="closeSidebarPanel">Home</nuxt-link>
+        </div>
+      </transition>
+      <figure>
+        <img src="~/static/logo.svg" class="image" alt="Barnbirds Logo">
+      </figure>
+      <h1>Willkommen auf der Website der Barnbirds</h1>
+      <p>Die Seite befindet sich aktuell im Aufbau, also kommt bald wieder für mehr Infos</p>
     </div>
   </div>
 </template>
 
 <script>
 
-export default {
-  data: () => ({
-    isPanelOpen: false
-  }),
-  methods: {
-    closeSidebarPanel () {
-      this.isPanelOpen = false
-    }
-  }
+import { mapMutations } from 'vuex'
 
+export default {
+  computed: {
+    isPanelOpen () {
+      return this.$store.state.navbar.isNavOpen
+    }
+  },
+  methods: {
+    ...mapMutations({
+      closSidebarPanel: 'navbar/toggleNav'
+    })
+  }
 }
 </script>
 <style>
@@ -51,7 +49,8 @@ export default {
 }
 
 .sidebar-backdrop {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #90a4b7;
+  filter: blur(4px);
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -61,6 +60,7 @@ export default {
 }
 
 .sidebar-panel {
+  backdrop-filter: blur(10px);
   overflow-y: auto;
   background-color: var(--code-bg-color);
   position: fixed;

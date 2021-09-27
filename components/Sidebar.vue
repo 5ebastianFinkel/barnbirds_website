@@ -1,25 +1,29 @@
 <template>
   <div class="sidebar">
-    <div v-if="isPanelOpen" class="sidebar-backdrop" @click="closeSidebarPanel" />
+    <div v-if="isPanelOpen" class="sidebar-backdrop" @click="closeSidebarPanel"/>
     <transition name="slide">
       <div
         v-if="isPanelOpen"
         class="sidebar-panel"
       >
-        <slot />
+        <slot/>
       </div>
     </transition>
   </div>
 </template>
 <script>
+import { mapMutations } from 'vuex'
+
 export default {
-  data: () => ({
-    isPanelOpen: false
-  }),
-  methods: {
-    closeSidebarPanel () {
-      this.isPanelOpen = false
+  computed: {
+    isPanelOpen () {
+      return this.$store.state.navbar.isNavOpen
     }
+  },
+  methods: {
+    ...mapMutations({
+      closSidebarPanel: 'navbar/toggleNav'
+    })
   }
 }
 </script>

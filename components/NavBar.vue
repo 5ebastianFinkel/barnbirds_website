@@ -1,7 +1,7 @@
 <template>
   <div class="nav-bar">
     <div class="sidebar-button">
-      <Burger @burgerEvent="toggleSidebarPanel" />
+      <Burger/>
     </div>
     <a href="/" class="nav-bar-title">
       <img src="~/static/logo.svg" alt="Barnbirds Logo" class="logo">
@@ -13,10 +13,6 @@
 
 export default {
   name: 'NavBar',
-  methods: {
-    toggleSidebarPanel () {
-      this.isPanelOpen = !this.isPanelOpen
-    }
-  }
+
 }
 </script>
