@@ -2,7 +2,8 @@ module.exports = {
   root: true,
   env: {
     browser: true,
-    node: true
+    node: true,
+    'cypress/globals': true
   },
   parserOptions: {
     parser: '@babel/eslint-parser',
@@ -10,9 +11,11 @@ module.exports = {
   },
   extends: [
     '@nuxtjs',
-    'plugin:nuxt/recommended'
+    'plugin:nuxt/recommended',
+    'plugin:cypress/recommended'
   ],
   plugins: [
+    'cypress'
   ],
   // add your custom rules here
   rules: {}
