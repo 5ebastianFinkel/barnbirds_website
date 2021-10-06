@@ -18,5 +18,7 @@ module.exports = {
     '<rootDir>/components/**/*.vue',
     '<rootDir>/pages/**/*.vue'
   ],
+  // ignore test files in cypress folder
+  testPathIgnorePatterns: ["/node_modules/", "<rootDir>/cypress/"],
   testEnvironment: 'jsdom'
 }
