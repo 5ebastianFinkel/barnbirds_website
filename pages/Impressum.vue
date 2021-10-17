@@ -9,6 +9,7 @@ Created: 2021/10/16 | 13:58 CET
 
 <template>
   <div class="container">
+    <div>
     <h1>Impressum</h1>
 
     <h2>Angaben gemäß § 5 TMG</h2>
@@ -21,6 +22,7 @@ Created: 2021/10/16 | 13:58 CET
       E-Mail: michael.dewes@p-m-d.de</p>
 
     <p>Quelle: <a href="https://www.e-recht24.de">https://www.e-recht24.de</a></p>
+    </div>
   </div>
 </template>
 
@@ -33,6 +35,9 @@ export default {
 <style scoped >
 .container {
   height: 100%;
-  justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 </style>
