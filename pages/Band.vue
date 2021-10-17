@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="band">
     <h1>Band</h1>
     <ul>
       <li>Ira</li>
@@ -14,6 +14,12 @@
 
 <script>
 export default {
-  name: 'band'
+  name: 'Band'
 }
 </script>
+<style scoped>
+
+.band {
+  height: 100%;
+}
+</style>

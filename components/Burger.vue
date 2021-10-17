@@ -1,3 +1,11 @@
+<!--
+
+FILL THIS BLANK WITH DESCRIPTION
+
+Author: sfinkel
+Created: 2021/10/06 | 10:24 CET
+
+-->
 <template>
   <div
     id="burger"

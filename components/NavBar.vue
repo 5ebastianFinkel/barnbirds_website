@@ -1,3 +1,11 @@
+<!--
+
+FILL THIS BLANK WITH DESCRIPTION
+
+Author: sfinkel
+Created: 2021/10/06 | 10:24 CET
+
+-->
 <template>
   <div>
     <div class="nav-bar">
@@ -11,10 +19,13 @@
     <Sidebar>
       <ul>
         <li>
-          <nuxt-link to="">Home</nuxt-link>
+          <nuxt-link to="/">Home</nuxt-link>
         </li>
         <li>
           <nuxt-link to="/Band">Band</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link to="/Impressum">Impressum</nuxt-link>
         </li>
       </ul>
 
@@ -29,18 +40,16 @@ export default {
 }
 </script>
 <style>
-.nuxt-link-active {
-  display: block;
-  padding: 0 1.5rem;
-  line-height: 36px;
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--c-text);
-  white-space: nowrap;
+
+ul {
+  padding: 0;
+  margin: 0;
 }
 
-.nuxt-link-active:hover {
-  text-decoration: none;
-  color: var(--c-brand);
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
+
 </style>
