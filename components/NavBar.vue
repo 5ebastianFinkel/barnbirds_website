@@ -41,6 +41,11 @@ export default {
 </script>
 <style>
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 li {
   list-style: none;
   padding: 0;

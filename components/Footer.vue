@@ -8,8 +8,11 @@ Created: 2021/10/15 | 22:08 CET
 -->
 <template>
   <div class="container">
-      <p><nuxt-link to="/Impressum">Impressum</nuxt-link> | Copyright <fa :icon="faCopyright"/> 2021-heute The Barnbirds
-      </p>
+    <nuxt-link to="/Impressum">Impressum</nuxt-link>
+    <p>| Copyright
+      <fa :icon="faCopyright"/>
+      2021-heute The Barnbirds
+    </p>
   </div>
 </template>
 

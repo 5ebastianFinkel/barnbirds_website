@@ -141,7 +141,8 @@ a,
 a:hover,
 .nuxt-link-active:hover,
 .nuxt-link-exact-active:hover
-.nuxt-link-active:visited{
+.nuxt-link-active:visited {
+  display: inline;
   text-decoration: none;
   color: var(--c-brand);
 }
