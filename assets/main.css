@@ -69,10 +69,6 @@ div {
   display: block;
 }
 
-a {
-  text-decoration: none;
-}
-
 img {
   max-width: 100%;
 }
@@ -129,8 +125,12 @@ img {
   width: 1.25rem;
 }
 
-.nuxt-link-active {
-  display: block;
+a,
+.nuxt-link-active,
+.nuxt-link-exact-active,
+.nuxt-link-prefetched {
+  text-decoration: none;
+  display: inline;
   padding: 0 1.5rem;
   line-height: 36px;
   font-size: 1rem;
@@ -138,8 +138,19 @@ img {
   color: var(--c-text);
   white-space: nowrap;
 }
-
-.nuxt-link-active:hover {
+a:hover,
+.nuxt-link-active:hover,
+.nuxt-link-exact-active:hover
+.nuxt-link-active:visited{
   text-decoration: none;
   color: var(--c-brand);
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
 }

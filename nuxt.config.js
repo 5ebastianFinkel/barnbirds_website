@@ -1,10 +1,11 @@
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'barnbirds',
+    title: 'The Barnbirds',
     htmlAttrs: {
       lang: 'en'
     },
@@ -36,9 +37,16 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/stylelint
-    '@nuxtjs/stylelint-module'
+    '@nuxtjs/stylelint-module',
+    '@nuxtjs/fontawesome'
   ],
-
+  fontawesome: {
+    component: 'Fa',
+    suffix: false,
+    icons: {
+      regular: ['faCopyright'],
+    }
+  },
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
   ],

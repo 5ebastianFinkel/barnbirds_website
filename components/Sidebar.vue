@@ -1,10 +1,18 @@
+<!--
+
+This is the sidebar component
+
+Author: sfinkel
+Created: 2021/10/06 | 10:24 CET
+
+-->
 <template>
-  <div class="sidebar">
+  <div>
     <div v-if="isPanelOpen" class="sidebar-backdrop" @click="toggle" />
     <transition name="slide">
       <div
         v-if="isPanelOpen"
-        class="sidebar-panel"
+        class="sidebar"
       >
         <slot />
       </div>
@@ -49,15 +57,15 @@ export default {
   cursor: pointer;
 }
 
-.sidebar-panel {
+.sidebar {
   overflow-y: auto;
-  background-color: var(--c-white-dark);
+  background-color: var(--c-white);
   position: fixed;
   left: 0;
   top: var(--header-height);
   width: 150px;
   height: 300px;
   z-index: 10;
-  padding: 3rem 20px 2rem 20px;
+  padding: 0;
 }
 </style>
