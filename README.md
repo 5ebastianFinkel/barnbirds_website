@@ -1,4 +1,6 @@
 # barnbirds
+[![Netlify Status](https://api.netlify.com/api/v1/badges/de64872c-c72e-4bc4-ab2b-87aa48d7c4eb/deploy-status)](https://app.netlify.com/sites/barnbirds/deploys)
+
 
 ## Build Setup
 
