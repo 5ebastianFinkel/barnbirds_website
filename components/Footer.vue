@@ -8,11 +8,9 @@ Created: 2021/10/15 | 22:08 CET
 -->
 <template>
   <div class="container">
-    <nuxt-link to="/Impressum">Impressum</nuxt-link>
-    <p>| Copyright
-      <fa :icon="faCopyright"/>
-      2021-heute The Barnbirds
-    </p>
+    <span>
+    <nuxt-link to="/Impressum">Impressum</nuxt-link><p class="text">| Copyright &copy; 2021-heute The Barnbirds </p>
+    </span>
   </div>
 </template>
 
@@ -46,4 +44,11 @@ export default {
   background-color: var(--c-bg);
 }
 
+.text {
+  margin: 0;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 0.9rem;
+  color: var(--c-text-light);
+}
 </style>

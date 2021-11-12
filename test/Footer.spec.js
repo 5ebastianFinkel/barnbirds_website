@@ -12,4 +12,13 @@ describe('Footer', () => {
     expect(wrapper.vm).toBeTruthy()
     expect(link.element.textContent).toBe('Impressum')
   })
+
+  test('renders correctly', () => {
+    const wrapper = mount(Footer, {
+      stubs: {
+        NuxtLink: RouterLinkStub
+      }
+    })
+    expect(wrapper.element).toMatchSnapshot()
+  })
 })
