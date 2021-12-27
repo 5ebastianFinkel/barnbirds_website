@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <logo />
     <h1>Willkommen auf der Website der Barnbirds</h1>
     <p>Die Seite befindet sich aktuell im Aufbau, also kommt bald wieder für mehr Infos</p>
@@ -23,3 +23,11 @@ export default {
   }
 }
 </script>
+<style scoped>
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+</style>

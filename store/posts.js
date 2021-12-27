@@ -15,7 +15,13 @@ export const state = () => (
         id: 'alfons',
         title: 'Alfons',
         content: 'Der Herr der Tasten und Soundchamäleon'
+      },
+      {
+        id: 'johannes',
+        title: 'Johannes',
+        content: 'Johannes singt und spielt Akustikgitarre',
       }
+
     ]
   }
 )

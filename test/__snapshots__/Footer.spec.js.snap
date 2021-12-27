@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders correctly 1`] = `
+<div
+  class="container"
+>
+  <span>
+    <a
+      data-testid="impressum"
+    >
+      Impressum
+    </a>
+    <p
+      class="text"
+    >
+      | Copyright © 2021-heute The Barnbirds 
+    </p>
+  </span>
+</div>
+`;

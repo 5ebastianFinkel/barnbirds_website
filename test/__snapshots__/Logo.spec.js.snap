@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NuxtLogo renders correctly 1`] = `
+<nuxt-img
+  sizes="sm:80vw md:50vw lg:400px"
+  src="logo.svg"
+/>
+`;

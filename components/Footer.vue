@@ -9,7 +9,7 @@ Created: 2021/10/15 | 22:08 CET
 <template>
   <div class="container">
     <span>
-    <nuxt-link to="/Impressum">Impressum</nuxt-link><p class="text">| Copyright &copy; 2021-heute The Barnbirds </p>
+    <nuxt-link data-testid="impressum" to="/Impressum">Impressum</nuxt-link><p class="text">| Copyright &copy; 2021-heute The Barnbirds </p>
     </span>
   </div>
 </template>
