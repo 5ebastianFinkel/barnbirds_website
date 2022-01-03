@@ -25,10 +25,14 @@ Created: 2021/10/06 | 10:24 CET
           <nuxt-link to="/Band">Band</nuxt-link>
         </li>
         <li>
+          <nuxt-link to="/Playlist">Playlist</nuxt-link>
+        <li>
+          <nuxt-link to="/Contact">Kontakt</nuxt-link>
+        </li>
+        <li>
           <nuxt-link to="/Impressum">Impressum</nuxt-link>
         </li>
       </ul>
-
     </Sidebar>
   </div>
 </template>

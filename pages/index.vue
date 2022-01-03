@@ -2,7 +2,7 @@
   <div class="container">
     <logo />
     <h1>Willkommen auf der Website der Barnbirds</h1>
-    <p>Die Seite befindet sich aktuell im Aufbau, also kommt bald wieder für mehr Infos</p>
+    <p>Wir sind eine Band aus Münster und Umgebung, die sich der Musik der 60er und 70er Jahre verschrieben hat.</p>
   </div>
 </template>
 
@@ -25,6 +25,8 @@ export default {
 </script>
 <style scoped>
 .container {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;

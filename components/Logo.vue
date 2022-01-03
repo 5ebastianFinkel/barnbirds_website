@@ -10,7 +10,7 @@ Created: 2021/10/06 | 10:24 CET
 <template>
   <nuxt-img
     src="logo.svg"
-    sizes="sm:80vw md:50vw lg:400px"
+    sizes="sm:80vw md:50vw lg:200px"
   />
 </template>
 <script>
