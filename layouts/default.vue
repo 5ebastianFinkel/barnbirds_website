@@ -11,7 +11,7 @@
 .container {
   overflow: hidden;
   padding: 60px 20px;
-  height: 100vh;
+  height: 100%;
 }
 
 </style>
