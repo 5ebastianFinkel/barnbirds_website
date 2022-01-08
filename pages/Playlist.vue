@@ -1,29 +1,26 @@
 <template>
   <div class="container">
-    <div>
-      <h1>Band</h1>
-      <ul>
-        <li v-for="member in band" :key="member.name">
-          {{ member.name }}
-        </li>
-      </ul>
-    </div>
+    <h1>Playlist</h1>
+    <ul>
+      <li v-for="song in playlist" :key="song.id">
+        {{song.artist}} - {{song.title}}
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
-import band from 'static/band.json'
-
+import playlist from 'static/playlist.json'
 export default {
-  name: 'Band',
-
+  name: 'Playlist',
   data () {
     return {
-      band
+      playlist
     }
   }
 }
 </script>
+
 <style scoped>
 .container {
   height: 100%;
@@ -32,5 +29,4 @@ export default {
   flex-direction: column;
   align-items: center;
 }
-
 </style>

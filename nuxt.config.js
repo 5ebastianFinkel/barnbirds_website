@@ -45,12 +45,14 @@ export default {
     component: 'Fa',
     suffix: false,
     icons: {
-      regular: ['faCopyright'],
+      regular: ['faCopyright', 'faEnvelope'],
+      solid: ['faPhone']
     }
   },
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-  ],
+  image: {
+    // Options
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

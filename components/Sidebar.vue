@@ -60,6 +60,8 @@ export default {
 .sidebar {
   overflow-y: auto;
   background-color: var(--c-white);
+  border-bottom: 1px solid var(--c-divider);
+  border-right: 1px solid var(--c-divider);
   position: fixed;
   left: 0;
   top: var(--header-height);

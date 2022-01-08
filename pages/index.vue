@@ -1,13 +1,8 @@
 <template>
-  <div id="app">
-    <div class="theme no-sidebar">
-
-      <figure>
-        <img src="~/static/logo.svg" class="image" alt="Barnbirds Logo">
-      </figure>
-      <h1>Willkommen auf der Website der Barnbirds</h1>
-      <p>Die Seite befindet sich aktuell im Aufbau, also kommt bald wieder für mehr Infos</p>
-    </div>
+  <div class="container">
+    <logo />
+    <h1>Willkommen auf der Website der Barnbirds</h1>
+    <p>Wir sind eine Band aus Münster und Umgebung, die sich der Musik der 60er und 70er Jahre verschrieben hat.</p>
   </div>
 </template>
 
@@ -28,20 +23,13 @@ export default {
   }
 }
 </script>
-<style>
-
-.nuxt-link-active {
-  display: block;
-  padding: 0 1.5rem;
-  line-height: 36px;
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--c-text);
-  white-space: nowrap;
+<style scoped>
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.nuxt-link-active:hover {
-  text-decoration: none;
-  color: var(--c-brand);
-}
 </style>
