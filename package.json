@@ -17,7 +17,6 @@
     "test:e2e:dev": "start-server-and-test dev http://localhost:3000 cy:open"
   },
   "dependencies": {
-    "@egjs/vue-flicking": "^4.4.0",
     "core-js": "^3.19.1",
     "nuxt": "^2.15.8",
     "vue": "^2.6.14"
