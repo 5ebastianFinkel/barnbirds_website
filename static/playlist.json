@@ -2,113 +2,106 @@
   {
     "id": "1",
     "set": "1",
-    "title": "Time is Tight",
-    "artist": "The Artist",
-    "year": "2000"
+    "title": "Time Is Tight",
+    "artist": "Booker  T. & The M.G.'s",
+    "year": "1969"
   },
   {
     "id": "2",
     "set": "1",
-    "title": "With a Girl like You",
-    "artist": "The Artist",
-    "year": "2000"
+    "title": "With A Girl Like You",
+    "artist": "The Troggs",
+    "year": ""
   },
   {
     "id": "3",
     "set": "1",
     "title": "Bad Moon Rising",
     "artist": "Creedence Clearwater Revival",
-    "year": "2000"
+    "year": ""
   },
   {
     "id": "4",
     "set": "1",
-    "title": "Have you ever seen the rain",
+    "title": "Have You Ever Seen The Rain",
     "artist": "Creedence Clearwater Revival",
-    "year": "2000"
+    "year": ""
   },
   {
     "id": "5",
     "set": "1",
-    "title": "Long Cool Woman",
-    "artist": "Another Artist",
-    "year": "1950"
+    "title": "Long Cool Woman (In A Black Dress)",
+    "artist": "The Hollies",
+    "year": ""
   },
   {
-    "id": "5",
-    "set": "1",
-    "title": "Long Cool Woman",
-    "artist": "Another Artist",
-    "year": "1950"
+    "id": "6",
+    "set": "2",
+    "title": "Maggie May",
+    "artist": "Rod Stewart",
+    "year": ""
   },
   {
-    "id": "5",
-    "set": "1",
-    "title": "Long Cool Woman",
-    "artist": "Another Artist",
-    "year": "1950"
+    "id": "7",
+    "set": "2",
+    "title": "Shaking All Over",
+    "artist": "Johnny Kid & The Pirates",
+    "year": ""
   },
   {
-    "id": "5",
-    "set": "1",
-    "title": "Long Cool Woman",
-    "artist": "Another Artist",
-    "year": "1950"
+    "id": "8",
+    "set": "2",
+    "title": "Route 66",
+    "artist": "Chuck Berry",
+    "year": ""
   },
   {
-    "id": "5",
-    "set": "1",
-    "title": "Long Cool Woman",
-    "artist": "Another Artist",
-    "year": "1950"
+    "id": "9",
+    "set": "3",
+    "title": "Love Potion No. 9",
+    "artist": "The Searchers",
+    "year": ""
   },
   {
-    "id": "5",
-    "set": "1",
-    "title": "Long Cool Woman",
-    "artist": "Another Artist",
-    "year": "1950"
+    "id": "10",
+    "set": "3",
+    "title": "The Wanderer",
+    "artist": "Dion & The Belmonts",
+    "year": ""
   },
   {
-    "id": "5",
-    "set": "1",
-    "title": "Long Cool Woman",
-    "artist": "Another Artist",
-    "year": "1950"
+    "id": "11",
+    "set": "3",
+    "title": "Keep On Running",
+    "artist": "The Spencer Davis Group",
+    "year": ""
   },
   {
-    "id": "5",
-    "set": "1",
-    "title": "Long Cool Woman",
-    "artist": "Another Artist",
-    "year": "1950"
+    "id": "12",
+    "set": "4",
+    "title": "Red River Rock",
+    "artist": "Johnny & The Hurricanes",
+    "year": ""
   },
   {
-    "id": "5",
-    "set": "1",
-    "title": "Long Cool Woman",
-    "artist": "Another Artist",
-    "year": "1950"
+    "id": "13",
+    "set": "4",
+    "title": "These Boots Are Made For Walking",
+    "artist": "Nancy Sinatra",
+    "year": ""
   },
   {
-    "id": "5",
-    "set": "1",
-    "title": "Long Cool Woman",
-    "artist": "Another Artist",
-    "year": "1950"
+    "id": "14",
+    "set": "4",
+    "title": "Paint It Black",
+    "artist": "The Rolling Stones",
+    "year": ""
   },
   {
-    "id": "5",
-    "set": "1",
-    "title": "Long Cool Woman",
-    "artist": "Another Artist",
-    "year": "1950"
-  },
-  {
-    "id": "5",
-    "set": "1",
-    "title": "Long Cool Woman",
-    "artist": "Another Artist",
-    "year": "1950"
+    "id": "15",
+    "set": "4",
+    "title": "Far Far Away",
+    "artist": "Slade",
+    "year": ""
   }
 ]

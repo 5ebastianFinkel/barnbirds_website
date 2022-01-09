@@ -9,21 +9,15 @@ Created: 2021/10/15 | 22:08 CET
 <template>
   <div class="container">
     <span>
-    <nuxt-link data-testid="impressum" to="/Impressum">Impressum</nuxt-link><span class="text">| Copyright &copy; 2021-heute The Barnbirds </span>
+      <nuxt-link data-testid="impressum" to="/Impressum">Impressum</nuxt-link><span class="text">| Copyright &copy; 2021-heute The Barnbirds </span>
     </span>
   </div>
 </template>
 
 <script>
-import { faCopyright } from '@fortawesome/free-regular-svg-icons'
 
 export default {
-  name: 'Footer',
-  computed: {
-    faCopyright () {
-      return faCopyright
-    }
-  }
+  name: 'Footer'
 }
 </script>
 
