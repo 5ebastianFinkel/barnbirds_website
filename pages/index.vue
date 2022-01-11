@@ -3,6 +3,7 @@
     <logo />
     <h1>Willkommen auf der Website der Barnbirds</h1>
     <p>Wir sind eine Band aus Münster und Umgebung, die sich der Musik der 60er und 70er Jahre verschrieben hat.</p>
+    <instagram-link />
   </div>
 </template>
 
