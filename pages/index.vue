@@ -1,7 +1,9 @@
 <template>
   <div class="container">
     <logo />
-    <h1>Willkommen auf der Website der Barnbirds</h1>
+    <h1 class="tagline">
+      Willkommen auf der Website der Barnbirds
+    </h1>
     <p>Wir sind eine Band aus Münster und Umgebung, die sich der Musik der 60er und 70er Jahre verschrieben hat.</p>
     <instagram-link />
   </div>
@@ -31,6 +33,10 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.tagline {
+  color: var(--c-text-light);
 }
 
 </style>
