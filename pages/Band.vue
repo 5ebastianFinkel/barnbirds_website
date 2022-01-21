@@ -7,6 +7,10 @@
           {{ member.name }}
         </li>
       </ul>
+      <band-card
+        :image-name="band"
+        :musician-name="band.name"
+      />
     </div>
   </div>
 </template>

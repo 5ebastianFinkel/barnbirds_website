@@ -1,7 +1,8 @@
 [
   {
     "name": "Ira",
-    "instrument": "Gesang"
+    "instrument": "Gesang",
+    "image": "logo.svg"
   },
   {
     "name": "Sebastian",
