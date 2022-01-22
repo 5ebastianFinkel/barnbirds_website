@@ -1,28 +1,39 @@
 [
   {
+    "id": "1",
     "name": "Ira",
     "instrument": "Gesang",
     "image": "logo.svg"
   },
   {
+    "id": "2",
     "name": "Sebastian",
-    "instrument": "Gitarre"
+    "instrument": "Gitarre",
+    "image": ""
   },
   {
+    "id": "3",
     "name": "Alfons",
-    "instrument": "Keyboard"
+    "instrument": "Keyboard",
+    "image": ""
   },
   {
+    "id": "4",
     "name": "Peter",
-    "instrument": "Gitarre"
+    "instrument": "Gitarre",
+    "image": ""
   },
   {
+    "id": "5",
     "name": "Michael",
-    "instrument": "Schlagzeug"
+    "instrument": "Schlagzeug",
+    "image": ""
   },
   {
+    "id": "6",
     "name": "Florian",
-    "instrument": "Bass"
+    "instrument": "Bass",
+    "image": ""
   }
 ]
 

@@ -1,28 +1,30 @@
 <template>
-  <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
-    <img
-      class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
-      :src="imageName"
-      alt=""
-      width="384"
-      height="512"
-    >
-    <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
-      <blockquote>
-        <p class="text-lg font-medium">
-          “She's only happy when she's dancing”
-        </p>
-      </blockquote>
-      <figcaption class="font-medium">
-        <div class="text-sky-500 dark:text-sky-400">
-          {{}}
-        </div>
-        <div class="text-slate-700 dark:text-slate-500">
-          Gesang, Bongo und Tanzen
-        </div>
-      </figcaption>
-    </div>
-  </figure>
+  <div class="p-4 m-4">
+    <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
+      <img
+        class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
+        :scr="imageName"
+        alt=""
+        width="384"
+        height="512"
+      >
+      <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+        <blockquote>
+          <p class="text-lg font-medium">
+            “She's only happy when she's dancing”
+          </p>
+        </blockquote>
+        <figcaption class="font-medium">
+          <div class="text-sky-500 dark:text-sky-400">
+            {{ musicianName }}
+          </div>
+          <div class="text-slate-700 dark:text-slate-500">
+            {{ instruments }}
+          </div>
+        </figcaption>
+      </div>
+    </figure>
+  </div>
 </template>
 
 <script>
@@ -38,8 +40,8 @@ export default {
       default: 'Musiker'
     },
     instruments: {
-      type: Array,
-      default: () => ['Gitarre', 'Bass']
+      type: String,
+      default: 'Gitarre'
     }
   }
 }
