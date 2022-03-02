@@ -3,13 +3,12 @@
     <h1>Kontakt</h1>
     <p>
       <fa :icon="faEnvelope" />
-      <a href="mailto:letsRock@barnbirds.de">letsRock@barnbirds.de</a>
+      <a href="mailto:michael.dewes@p-m-d.de">letsRock@barnbirds.de</a>
     </p>
     <p>
       <fa :icon="faPhone" />
       <a href="tel:+491732690111">+49 176 2690111</a>
     </p>
-
   </div>
 </template>
 
