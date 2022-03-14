@@ -1,5 +1,3 @@
-/*noinspection CssUnknownTarget*/
-@import url(https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300&display=swap);
 :root {
   --c-divider: var(--c-divider-light);
   --c-text: var(--c-text-light-1);

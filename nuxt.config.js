@@ -33,6 +33,7 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxtjs/google-fonts',
     '@nuxtjs/eslint-module',
     '@nuxtjs/stylelint-module',
     '@nuxtjs/fontawesome',
