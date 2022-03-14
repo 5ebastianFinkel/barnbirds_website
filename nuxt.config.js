@@ -47,6 +47,11 @@ export default {
       solid: ['faPhone']
     }
   },
+  googleFonts: {
+    families: {
+      Roboto: true
+    }
+  },
   // Modules: https://go.nuxtjs.dev/config-modules
   image: {
     // Options
