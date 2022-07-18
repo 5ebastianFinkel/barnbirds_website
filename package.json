@@ -22,7 +22,7 @@
     "vue": "^2.6.14"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.17.0",
+    "@babel/eslint-parser": "^7.18.9",
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
     "@fortawesome/free-regular-svg-icons": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
